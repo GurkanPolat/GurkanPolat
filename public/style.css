@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e4e4e4;
+    color: #333;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.form {
+    padding: 20px;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form input[type="text"],
+.form input[type="date"],
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.signature {
+    margin-bottom: 20px;
+}
+
+.signature-box {
+    border: 1px dashed #ccc;
+    height: 60px;
+    margin-top: 10px;
+    background-image: url('signature-placeholder.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.dropdown-icon {
+    position: absolute;
+    top: 200%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 100%;
+        margin:  auto;
+    }
+}

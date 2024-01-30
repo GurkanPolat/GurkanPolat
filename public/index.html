@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean 3000 Service Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="container" id="formContainer">
+    <header class="header">
+        <img src="./img/logo-clean3000.png" alt="Clean 3000 Logo" class="logo">
+        <h1>AVIS DE PASSAGE</h1>
+    </header>
+    
+    <form class="form" id="serviceForm">
+        <label for="companyName">Nom entreprise/ou client :</label>
+        <input type="text" id="companyName" name="companyName">
+        
+
+        <label for="date">Date d'intervention :</label>
+        <input type="date" id="date" name="date">
+
+        <label for="observations">Observations :</label>
+        <textarea id="observations" name="observations"></textarea>
+
+        <div class="signature">
+            <label>Signature du technicien :</label>
+            <div class="signature-box"></div>
+        </div>
+
+        <div class="signature">
+            <label>Signature du client/Cachet de l'entreprise :</label>
+            <div class="signature-box"></div>
+        </div>
+
+        <button type="submit">ENVOYER</button>
+        <script src="./members.js"></script>
+    </form>
+</div>
+
+<div class="container recap" id="recapContainer" style="display:none;">
+    <header class="header">
+        <h1>Récapitulatif de l'Avis de Passage</h1>
+    </header>
+    <div class="form-recap">
+        <p><strong>Nom entreprise/ou client:</strong> <span id="recapCompanyName"></span></p>
+        <p><strong>Date d'intervention:</strong> <span id="recapDate"></span></p>
+        <p><strong>Observations:</strong> <span id="recapObservations"></span></p>
+    </div>
+   
+</div>
+
+<script src="./main.js"></script>
+</body>
+</html>
